@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HappyNess Resorts</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <section class="header">
+      <div class="flex">
+        <a href="#home" class="logo">HappyNess Resorts</a>
+        <a href="#availability" class="btn">check availability</a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+      <a id="top"></a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#reservation">reservation</a>
+        <a href="#gallery">gallery</a>
+        <a href="#contact">contact</a>
+        <a href="#reviews">reviews</a>
+      </nav>
+    </section>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="box swiper-slide">
+            <img
+              src="https://cdn2.tqsan.com/lacigale/wp-content/uploads/2016/07/slider-accueil-2.png"
+              alt=""
+            />
+            <div class="flex">
+              <h3>luxurious rooms</h3>
+              <a href="#availability" class="btn">check availability</a>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <img
+              src="https://cdn2.tqsan.com/lacigale/wp-content/uploads/2016/07/slider-restauration.png"
+              alt=""
+            />
+            <div class="flex">
+              <h3>foods and drinks</h3>
+              <a href="#reservation" class="btn">make a reservation</a>
+            </div>
+          </div>
+
+          <div class="box swiper-slide">
+            <img
+              src="https://cdn2.tqsan.com/lacigale/wp-content/uploads/2016/07/slide-accueil.png"
+              alt=""
+            />
+            <div class="flex">
+              <h3>luxurious halls</h3>
+              <a href="#contact" class="btn">contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- availability section starts  -->
+
+    <section class="availability" id="availability">
+      <form action="" method="post">
+        <div class="flex">
+          <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required />
+          </div>
+          <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required />
+          </div>
+          <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+              <option value="1">1 adult</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+              <option value="-">0 child</option>
+              <option value="1">1 child</option>
+              <option value="2">2 childs</option>
+              <option value="3">3 childs</option>
+              <option value="4">4 childs</option>
+              <option value="5">5 childs</option>
+              <option value="6">6 childs</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+              <option value="1">1 room</option>
+              <option value="2">2 rooms</option>
+              <option value="3">3 rooms</option>
+              <option value="4">4 rooms</option>
+              <option value="5">5 rooms</option>
+              <option value="6">6 rooms</option>
+            </select>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="check availability"
+          name="check"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <!-- availability section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <div class="image">
+          <img src="images/about-img-1.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h3>best staff</h3>
+          <p>
+            At HappyNess Resorts you will find the most polite, well-spoken,
+            calm, and presentable staff ever.
+          </p>
+          <a href="#reservation" class="btn">make a reservation</a>
+        </div>
+      </div>
+
+      <div class="row revers">
+        <div class="image">
+          <img
+            src="https://cdn2.tqsan.com/lacigale/wp-content/uploads/2016/07/corail.png"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h3>best foods</h3>
+          <p>
+            At HappyNess Resorts, food options are offered as a buffet or a la
+            carte, to showcase local products without misrepresenting them. The
+            classics of Mediterranean and international cuisine have place of
+            honor and are often revisited in keeping with the latest gourmet
+            trends. You will also be tempted by one of our cocktails in the
+            various bars or enjoy your favorite vintage from the wide collection
+            in our wine cellar.
+          </p>
+          <a href="#contact" class="btn">contact us</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="image">
+          <img
+            src="https://cdn2.tqsan.com/lacigale/wp-content/uploads/2016/07/la-cigale-piscine.png"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <h3>swimming pool</h3>
+          <p>
+            There are fantastic pools all over the world. Then there are our
+            pools which take the meaning of the word pool to a whole new level.
+            They're visually stunning and often in idyllic locations. Yes,
+            they're the pools you've probably scrolled through photos of a
+            hundred times on Instagram and dreamt of swimming in.
+          </p>
+          <a href="#availability" class="btn">check availability</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- reservation section starts  -->
+
+    <section class="reservation" id="reservation">
+      <form action="" method="post">
+        <h3>make a reservation</h3>
+        <div class="flex">
+          <div class="box">
+            <p>check in <span>*</span></p>
+            <input
+              type="date"
+              name="check_in"
+              class="input"
+              required
+              id="date"
+            />
+          </div>
+          <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required />
+          </div>
+          <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+              <option value="1">1 adult</option>
+              <option value="2">2 adults</option>
+              <option value="3">3 adults</option>
+              <option value="4">4 adults</option>
+              <option value="5">5 adults</option>
+              <option value="6">6 adults</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+              <option value="-">0 child</option>
+              <option value="1">1 child</option>
+              <option value="2">2 childs</option>
+              <option value="3">3 childs</option>
+              <option value="4">4 childs</option>
+              <option value="5">5 childs</option>
+              <option value="6">6 childs</option>
+            </select>
+          </div>
+          <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+              <option value="1">1 room</option>
+              <option value="2">2 rooms</option>
+              <option value="3">3 rooms</option>
+              <option value="4">4 rooms</option>
+              <option value="5">5 rooms</option>
+              <option value="6">6 rooms</option>
+            </select>
+          </div>
+        </div>
+        <input
+          type="submit"
+          value="check availability"
+          name="check"
+          class="btn"
+        />
+      </form>
+    </section>
+
+    <!-- reservation section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+      <div class="swiper gallery-slider">
+        <div class="swiper-wrapper">
+          <img src="images/gallery-img-1.jpg" class="swiper-slide" alt="" />
+          <img src="images/gallery-img-2.webp" class="swiper-slide" alt="" />
+          <img src="images/gallery-img-3.webp" class="swiper-slide" alt="" />
+          <img src="images/gallery-img-4.webp" class="swiper-slide" alt="" />
+          <img src="images/gallery-img-5.webp" class="swiper-slide" alt="" />
+          <img src="images/gallery-img-6.webp" class="swiper-slide" alt="" />
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <div class="row">
+        <form action="" method="post">
+          <h3>send us message</h3>
+          <input
+            type="text"
+            name="name"
+            required
+            maxlength="50"
+            placeholder="your name"
+            class="box"
+          />
+          <input
+            type="email"
+            name="email"
+            required
+            maxlength="50"
+            placeholder="enter your email"
+            class="box"
+          />
+          <input
+            type="number"
+            name="number"
+            required
+            maxlength="10"
+            min="0"
+            max="9999999999"
+            placeholder="enter your number"
+            class="box"
+          />
+          <textarea
+            name="msg"
+            class="box"
+            required
+            maxlength="1000"
+            placeholder="enter your message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" name="send" class="btn" />
+        </form>
+
+        <div class="faq">
+          <h3 class="title">frequently asked questions</h3>
+          <div class="box active">
+            <h3>how to cancel?</h3>
+            <p>
+              Contact us directly or the booking agency to see if we are willing
+              to accommodate you and issue a refund. If so, you're all set! This
+              is obviously the best option, as it guarantees the largest
+              possible return on lost money.
+            </p>
+          </div>
+          <div class="box">
+            <h3>is there any vacancy?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              ipsam neque quaerat mollitia ratione? Soluta!
+            </p>
+          </div>
+          <div class="box">
+            <h3>what are payment methods?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              ipsam neque quaerat mollitia ratione? Soluta!
+            </p>
+          </div>
+          <div class="box">
+            <h3>how to claim coupons codes?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              ipsam neque quaerat mollitia ratione? Soluta!
+            </p>
+          </div>
+          <div class="box">
+            <h3>what are the age requirements?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa
+              ipsam neque quaerat mollitia ratione? Soluta!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img
+              src="https://scontent.ftun1-2.fna.fbcdn.net/v/t39.30808-1/308039650_599426195263585_7341106766864254625_n.jpg?stp=dst-jpg_p200x200&_nc_cat=100&ccb=1-7&_nc_sid=7206a8&_nc_ohc=IhGl9h9SWBcAX97aZyY&_nc_ht=scontent.ftun1-2.fna&oh=00_AfD-XQe58WlOHjQKBjTPgzRBHgvY5D7yM8KmC77wcBKqtw&oe=637FC834"
+              alt=""
+            />
+            <h3>Fatma</h3>
+            <p>Proud bik barcha keep going<3.</p>
+            <!--rating star-->
+            <div class="rating">
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+            </div>
+
+            <!--rating star end-->
+          </div>
+          <div class="swiper-slide box">
+            <img
+              src="https://scontent.ftun1-2.fna.fbcdn.net/v/t39.30808-6/272141421_257137919875498_363320636910687447_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=174925&_nc_ohc=BVJTjzqEjvoAX-mh_uS&_nc_ht=scontent.ftun1-2.fna&oh=00_AfAMHxfCHea1Mba5rkRMaFuXij57c-IRW-TInE4loUFV9A&oe=63805A25"
+              alt=""
+            />
+            <h3>Mayssouma</h3>
+            <p>Men ahsan lblayes li mchitelha!</p>
+            <!--rating star-->
+            <div class="rating">
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+            </div>
+
+            <!--rating star end-->
+          </div>
+          <div class="swiper-slide box">
+            <img
+              src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.6435-9/69399621_1749812765163561_7740049328210706432_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=K4sJ00AebFIAX_9GHju&_nc_ht=scontent.ftun1-2.fna&oh=00_AfAxw94SWsfQP7DcZT5I32Encmz7zdvMQ956m5usxS_OFA&oe=63A2FD4E"
+              alt=""
+            />
+            <h3>Amel</h3>
+            <p>Bon courage .</p>
+            <!--rating star-->
+            <div class="rating">
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+            </div>
+
+            <!--rating star end-->
+          </div>
+          <div class="swiper-slide box">
+            <img
+              src="https://scontent.ftun1-2.fna.fbcdn.net/v/t1.6435-9/90590477_1142464402812613_5548026474214195200_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Sg4FA-kvlo0AX_B0dJS&_nc_ht=scontent.ftun1-2.fna&oh=00_AfDjHrngmqIMhhdW5Gfgv0WTd68iTScATvHwxVrJzj5m7w&oe=63A2D9BE"
+              alt=""
+            />
+            <h3>Noura</h3>
+            <p>Rabi m3ak.</p>
+            <!--rating star-->
+            <div class="rating">
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+              <i class="rating__star far fa-star"></i>
+            </div>
+
+            <!--rating star end-->
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- reviews section ends  -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <a href="tel:1234567890"
+            ><i class="fas fa-phone"></i> +216-212345678</a
+          >
+          <a href="tel:1112223333"
+            ><i class="fas fa-phone"></i> +216-212345678</a
+          >
+          <a href="mailto:shakhanas@gmail.com"
+            ><i class="fas fa-envelope"></i> saidinesrine888@gmail.com</a
+          >
+          <a href="#"
+            ><i class="fas fa-map-marker-alt"></i> Gabes, Tunisia - 123456</a
+          >
+        </div>
+
+        <div class="box">
+          <a href="#home">home</a>
+          <a href="#about">about</a>
+          <a href="#reservation">reservation</a>
+          <a href="#gallery">gallery</a>
+          <a href="#contact">contact</a>
+          <a href="#reviews">reviews</a>
+        </div>
+
+        <div class="box">
+          <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+          <a href="#">twitter <i class="fab fa-twitter"></i></a>
+          <a href="#">instagram <i class="fab fa-instagram"></i></a>
+          <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy; copyright @ 2022 by Saidi Nesrine | all rights reseved!
+      </div>
+    </section>
+    <a href="#top">
+      <div class="site-backtop" title="Back to top" style="display: block">
+        <i class="fa fa-angle-up" aria-hidden="true"></i></div
+    ></a>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
